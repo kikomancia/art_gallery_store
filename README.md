@@ -1,1 +1,1 @@
-# art_gallery_store
+# art_gallery_online
