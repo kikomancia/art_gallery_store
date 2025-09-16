@@ -1,7 +1,7 @@
 <?php
 // painting_list.php
 
-require '../mikastore/php_code/dbconn.php';
+require 'php_code/dbconn.php';
 
 // Fetch paintings from database
 $sql = "SELECT pnt_name, descriptions, price, total_qty, img FROM tbl_painting_infos ORDER BY pnt_id  DESC";
@@ -79,7 +79,7 @@ $connect->close();
                         <div class="col mb-5">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img class="card-img-top" src="<?php echo '../mikastore/images/' . htmlspecialchars($painting['img']); ?>" style="height:220px; width:100%; object-fit:contain; background:#f8f9fa;" alt="Painting Image" />
+                                <img class="card-img-top" src="<?php echo 'images/' . htmlspecialchars($painting['img']); ?>" style="height:220px; width:100%; object-fit:contain; background:#f8f9fa;" alt="Painting Image" />
 
                                 <!-- Product details-->
                                 <div class="card-body p-4">
